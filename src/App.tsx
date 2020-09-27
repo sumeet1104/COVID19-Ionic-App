@@ -10,10 +10,12 @@ import {
   IonTabs
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
+import { call, home, informationCircleOutline, newspaper, planet } from 'ionicons/icons';
+import WorldTab from './pages/WorldTab';
+import CountryTab from './pages/CountryTab';
+import NewsTab from './pages/NewsTab';
+import GuidelinesTab from './pages/GuidelinesTab';
+import HelpTab from './pages/HelpTab';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -33,33 +35,46 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import { DataProvider } from './context/DataContext';
 
 const App: React.FC = () => (
   <IonApp>
+    <DataProvider>
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route path="/tab1" component={Tab1} exact={true} />
-          <Route path="/tab2" component={Tab2} exact={true} />
-          <Route path="/tab3" component={Tab3} />
-          <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
+          <Route path="/world" component={WorldTab} exact={true} />
+          <Route path="/country" component={CountryTab} exact={true} />
+          <Route path="/news" component={NewsTab} />
+          <Route path="/guidelines" component={GuidelinesTab} />
+          <Route path="/help" component={HelpTab} />
+          <Route path="/" render={() => <Redirect to="/world" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon icon={triangle} />
-            <IonLabel>Tab 1</IonLabel>
+          <IonTabButton tab="WorldTab" href="/world">
+            <IonIcon icon={planet} />
+            <IonLabel>World</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon icon={ellipse} />
-            <IonLabel>Tab 2</IonLabel>
+          <IonTabButton tab="CountryTab" href="/country">
+            <IonIcon icon={home} />
+            <IonLabel>Country</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon icon={square} />
-            <IonLabel>Tab 3</IonLabel>
+          <IonTabButton tab="NewsTab" href="/news">
+            <IonIcon icon={newspaper} />
+            <IonLabel>News</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="GuidelinesTab" href="/guidelines">
+            <IonIcon icon={informationCircleOutline} />
+            <IonLabel>Guidelines</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="HelpTab" href="/help">
+            <IonIcon icon={call} />
+            <IonLabel>Help</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
     </IonReactRouter>
+    </DataProvider>
   </IonApp>
 );
 
