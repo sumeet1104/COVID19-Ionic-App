@@ -14,7 +14,9 @@ export interface IProviderProps {
     countryArray: [] as any,
     setCountryArray: ([])=>{},
     countryNameArray: [] as any,
-    setCountryNameArray: ([])=>{}
+    setCountryNameArray: ([])=>{},
+    newsDataArray: [] as any,
+    setNewsDataArray: ([])=>{}
   };
 
 const DataContext = createContext(initialState);
@@ -25,9 +27,10 @@ export const DataProvider = (props: IProviderProps) => {
   const [showLoading, setShowLoading] = useState(true);
   const [countryArray,setCountryArray] = useState(initialState.countryArray);
   const [countryNameArray,setCountryNameArray] = useState(initialState.countryNameArray);
+  const [newsDataArray,setNewsDataArray] = useState(initialState.newsDataArray);
 
   return (
-    <DataContext.Provider value={{globalData,setGlobalData, showLoading, setShowLoading, countryArray, setCountryArray, countryNameArray, setCountryNameArray}}>
+    <DataContext.Provider value={{globalData,setGlobalData, showLoading, setShowLoading, countryArray, setCountryArray, countryNameArray, setCountryNameArray, newsDataArray, setNewsDataArray}}>
       {props.children}
     </DataContext.Provider>
   );
