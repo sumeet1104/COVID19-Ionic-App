@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useContext, useEffect } from 'react';
 import axios from 'axios';
-import './DataBoxes.css';
 import { IonCol, IonRow } from '@ionic/react';
 import DataContext from '../../context/DataContext';
 
