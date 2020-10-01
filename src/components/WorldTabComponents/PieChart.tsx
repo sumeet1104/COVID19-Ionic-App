@@ -2,7 +2,6 @@ import { IonCard } from '@ionic/react';
 import React, { useContext } from 'react';
 import {Pie} from 'react-chartjs-2';
 import DataContext from '../../context/DataContext';
-import './PieChart.css';
 
 const PieChart = () => {
     const {globalData,showLoading} = useContext(DataContext);

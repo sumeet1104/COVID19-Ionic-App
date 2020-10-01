@@ -87,7 +87,7 @@ ion-content {
   
   .pieCard {
     margin-top: -5px;
-    padding-top: 5px;
+    padding: 5%;
   }
   
   .tipsSlides {
@@ -130,3 +130,7 @@ ion-content {
   ion-slides {
     height: 30%;
   }
+
+  .data-boxes{
+    padding: 5%;
+}

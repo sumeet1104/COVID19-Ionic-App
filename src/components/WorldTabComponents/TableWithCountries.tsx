@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import './TableWithCountries.css'
 import DataContext from '../../context/DataContext';
 import { IonCard, IonCol, IonGrid, IonRow } from '@ionic/react';
 

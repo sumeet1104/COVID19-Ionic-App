@@ -3,7 +3,6 @@ import axios from 'axios';
 import { IonCard, IonImg, IonLoading, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonFooter } from '@ionic/react';
 import DataContext from '../../context/DataContext';
 import moment from 'moment';
-import './NewsCard.css';
 
 const NewsCard = () => {
 

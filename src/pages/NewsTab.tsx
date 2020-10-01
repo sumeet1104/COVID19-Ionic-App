@@ -1,6 +1,7 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import NewsCard from '../components/NewsTabComponents/NewsCard';
+import './NewsTab.css';
 
 const NewsTab: React.FC = () => {
   return (

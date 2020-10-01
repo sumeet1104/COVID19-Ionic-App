@@ -1,7 +1,7 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
+import './HelpTab.css';
+import HelpCard from '../components/HelpTabComponents/HelpCard';
 
 const HelpTab: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const HelpTab: React.FC = () => {
             <IonTitle size="large">Help</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+        <HelpCard/>
       </IonContent>
     </IonPage>
   );
