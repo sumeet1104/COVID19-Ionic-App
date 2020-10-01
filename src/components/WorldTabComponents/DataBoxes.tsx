@@ -10,7 +10,7 @@ interface ContainerProps {
 }
 
 const Section1Boxes: React.FC<ContainerProps> = () => {
-  const { globalData, setGlobalData, setShowLoading, showLoading, setCountryArray, setCountryNameArray, countryArray } = useContext(DataContext);
+  const { globalData, setGlobalData, setShowLoading, showLoading, setCountryArray, setCountryNameArray } = useContext(DataContext);
   const tempCountryNameArray = [] as any;
   const tempCountryCOVIDDetailArray = [] as any;
 
