@@ -13,9 +13,9 @@ const PieChart = () => {
     var deaths = 0;
 
     if(!showLoading){
-      confirmed = globalData.confirmed.value;
-      recovered = globalData.recovered.value;
-      deaths = globalData.deaths.value;
+      confirmed = globalData?.confirmed?.value;
+      recovered = globalData?.recovered?.value;
+      deaths = globalData?.deaths?.value;
     }
 
 

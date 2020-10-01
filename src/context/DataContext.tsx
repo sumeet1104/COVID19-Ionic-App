@@ -1,3 +1,4 @@
+/* eslint-disable no-empty-pattern */
 import React, { useState, createContext } from 'react';
 
 export interface IProviderProps {
@@ -12,17 +13,21 @@ export interface IProviderProps {
     setShowLoading: (prevState: boolean) => {},
     countryArray: [] as any,
     setCountryArray: ([])=>{},
+    countryNameArray: [] as any,
+    setCountryNameArray: ([])=>{}
   };
 
 const DataContext = createContext(initialState);
 
 export const DataProvider = (props: IProviderProps) => {
+
   const [globalData,setGlobalData] = useState(initialState.globalData);
   const [showLoading, setShowLoading] = useState(true);
   const [countryArray,setCountryArray] = useState(initialState.countryArray);
+  const [countryNameArray,setCountryNameArray] = useState(initialState.countryNameArray);
 
   return (
-    <DataContext.Provider value={{globalData,setGlobalData, showLoading, setShowLoading, countryArray, setCountryArray}}>
+    <DataContext.Provider value={{globalData,setGlobalData, showLoading, setShowLoading, countryArray, setCountryArray, countryNameArray, setCountryNameArray}}>
       {props.children}
     </DataContext.Provider>
   );

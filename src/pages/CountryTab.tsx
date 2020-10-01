@@ -1,7 +1,8 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
+import './CountryTab.css';
+import CountryUIComponent from '../components/CountryTabComponents/UIComponent';
 
 const CountryTab: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const CountryTab: React.FC = () => {
             <IonTitle size="large">Country</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+        <CountryUIComponent/>
       </IonContent>
     </IonPage>
   );
