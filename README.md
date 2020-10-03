@@ -2,7 +2,9 @@
 
 COVID-19 Application using Ionic components with React Typescript. 
 
-The application has been developed for PWA, Android and IOS.
+The application has been developed for PWA, Android and IOS. 
+
+Deployed PWA can be found [here](https://covid19-app-59c20.web.app).
 
 
 ## Table of Contents
@@ -99,6 +101,8 @@ For the purpose of the app, we'll be consuming the following APIs:
 
 1. Run `ionic build --prod`
 2. Push the `build` folder to your hosting service
+
+This app has been deployed using Firebase [here](https://covid19-app-59c20.web.app)
 
 ### Android
 
