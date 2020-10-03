@@ -18,7 +18,7 @@ const WorldTab: React.FC = () => {
       <IonContent className="ion-padding">
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle>World</IonTitle>
+            <IonTitle size="large">World</IonTitle>
           </IonToolbar>
         </IonHeader>
         <Section1Boxes name="Tab 1 page" />
