@@ -1,4 +1,4 @@
-# Ionic Angular Conference Application
+# Ionic React COVID19 Application
 
 COVID-19 Application using Ionic components with React Typescript. 
 
