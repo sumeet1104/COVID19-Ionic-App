@@ -1,6 +1,6 @@
 {
   "appId": "io.ionic.starter",
-  "appName": "corona-tracker",
+  "appName": "covid-19",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",

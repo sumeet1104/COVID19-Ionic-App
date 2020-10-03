@@ -134,3 +134,8 @@ ion-content {
   .data-boxes{
     padding: 5%;
 }
+
+ion-title{
+  text-align: center;
+  color: aliceblue;
+}
