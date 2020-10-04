@@ -20,20 +20,6 @@ const CountryUIComponent = () => {
     })
     const [dateArray, setDateArray] = useState<[{ confirmed: number, date: string, deaths: number, recovered: number }]>([{ confirmed: 0, date: "", deaths: 0, recovered: 0 }])
 
-    //   var cases = {
-    //     confirmed: 0,
-    //     recovered: 0,
-    //     deaths: 0
-    //   };
-
-    //   if (!showLoading) {
-    //     cases = {
-    //       confirmed: globalData.confirmed.value,
-    //       recovered: globalData.recovered.value,
-    //       deaths: globalData.deaths.value
-    //     }
-    //   }
-
     const tempCountryNameArray = [] as any;
 
     useEffect(() => {
